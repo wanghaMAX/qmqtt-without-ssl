@@ -1,0 +1,8 @@
+QT += network 
+QT += core 
+# QT += qmqtt
+
+INCLUDEPATH += src/mqtt
+LIBS += -L"src/mqtt" -lqmqtt
+SOURCES += ./examples/qmqtt/client/example.cpp
+
